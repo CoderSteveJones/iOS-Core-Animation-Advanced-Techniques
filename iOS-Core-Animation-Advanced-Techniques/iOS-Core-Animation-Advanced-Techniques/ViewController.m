@@ -7,23 +7,77 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
+#import "TitleCell.h"
+#import "CoordinateSystemController.h"
+#import "HitTestingController.h"
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *titles;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"主页";
+    self.tableView.tableFooterView = [[UIView alloc] init];
+}
+
+#pragma mark - datasource delegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.titles.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TitleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"titleCellId"];
+    cell.titleLab.text = self.titles[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    switch (indexPath.row) {
+        case 0:
+        {
+             [self performSegueWithIdentifier:@"coorVC" sender:self];
+        }
+            
+            break;
+        case 1:
+        {
+            [self performSegueWithIdentifier:@"hitVC" sender:self];
+        }
+            
+            break;
+            
+        default:
+            break;
+    }
+}
+#pragma mark - prepareForSegue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"coorVC"]) {
+        CoordinateSystemController *vc = [segue destinationViewController];
+        vc.title = @"坐标系";
+    }else if ([segue.identifier isEqualToString:@"hitVC"]){
+        HitTestingController *vc = [segue destinationViewController];
+        vc.title = @"Hit testing";
+    }
+}
+
+#pragma mark - lazyload
+- (NSArray *)titles
+{
+    if (!_titles) {
+        _titles = @[@"坐标系",@"Hit Testing"];
+    }
+    return _titles;
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end
