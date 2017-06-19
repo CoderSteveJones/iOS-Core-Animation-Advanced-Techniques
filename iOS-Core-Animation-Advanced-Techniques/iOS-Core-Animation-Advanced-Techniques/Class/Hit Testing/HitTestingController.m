@@ -9,7 +9,8 @@
 #import "HitTestingController.h"
 
 @interface HitTestingController ()
-
+@property (weak, nonatomic) IBOutlet UIView *layerView;
+@property (strong, nonatomic) CALayer *blueLayer;
 @end
 
 @implementation HitTestingController
@@ -17,8 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor orangeColor];
 
+    self.blueLayer = [CALayer layer];
+    self.blueLayer.backgroundColor = [UIColor blueColor].CGColor;
+    self.blueLayer.frame = CGRectMake(50, 50, 100, 100);
+    [self.layerView.layer addSublayer:self.blueLayer];
+    
 }
 
 - (void)didReceiveMemoryWarning {

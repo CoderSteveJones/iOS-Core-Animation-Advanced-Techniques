@@ -9,6 +9,8 @@
 #import "CoordinateSystemController.h"
 
 @interface CoordinateSystemController ()
+@property (weak, nonatomic) IBOutlet UIView *redView;
+@property (weak, nonatomic) IBOutlet UIView *blueView;
 
 @end
 
@@ -17,7 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
+    
+    self.redView.layer.zPosition = 1.0f;
 }
 
 - (void)didReceiveMemoryWarning {

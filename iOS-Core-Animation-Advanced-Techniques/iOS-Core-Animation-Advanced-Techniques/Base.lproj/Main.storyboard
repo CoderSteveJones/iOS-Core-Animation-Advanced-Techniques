@@ -103,12 +103,40 @@
                     <view key="view" contentMode="scaleToFill" id="p0j-AE-0Jm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urw-bv-vB1">
+                                <rect key="frame" x="137" y="177" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.34901961679999999" blue="0.1921568662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3Ue-vQ-4oa"/>
+                                    <constraint firstAttribute="width" constant="100" id="RVd-xG-Q3M"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jig-FR-ECJ">
+                                <rect key="frame" x="137" y="242" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.2588235438" green="0.75686275960000005" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="B6W-yv-bwP"/>
+                                    <constraint firstAttribute="height" constant="100" id="Pi1-uq-7mw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="urw-bv-vB1" firstAttribute="centerX" secondItem="p0j-AE-0Jm" secondAttribute="centerX" id="86E-IY-ZQX"/>
+                            <constraint firstItem="urw-bv-vB1" firstAttribute="top" secondItem="cUr-zq-syr" secondAttribute="bottom" constant="113" id="9f2-Rb-cCa"/>
+                            <constraint firstItem="jig-FR-ECJ" firstAttribute="centerX" secondItem="p0j-AE-0Jm" secondAttribute="centerX" id="nMS-pa-DiK"/>
+                            <constraint firstItem="jig-FR-ECJ" firstAttribute="top" secondItem="cUr-zq-syr" secondAttribute="bottom" constant="178" id="zjW-et-Ocj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueView" destination="jig-FR-ECJ" id="kwY-9o-gBI"/>
+                        <outlet property="redView" destination="urw-bv-vB1" id="xUS-9i-vXd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rfm-eQ-OU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1193" y="-296"/>
+            <point key="canvasLocation" x="1192.8" y="-296.40179910044981"/>
         </scene>
         <!--Hit Testing Controller-->
         <scene sceneID="bA8-0c-cr6">
@@ -121,8 +149,25 @@
                     <view key="view" contentMode="scaleToFill" id="c8K-O4-pq6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tp9-U3-g4g">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.66274509800000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Cdw-MQ-aRg"/>
+                                    <constraint firstAttribute="height" constant="200" id="s7R-qf-3dv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tp9-U3-g4g" firstAttribute="centerX" secondItem="c8K-O4-pq6" secondAttribute="centerX" id="TId-A9-CPy"/>
+                            <constraint firstItem="tp9-U3-g4g" firstAttribute="centerY" secondItem="c8K-O4-pq6" secondAttribute="centerY" id="o4Z-CB-3V4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="layerView" destination="tp9-U3-g4g" id="sGj-Bf-1vl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BjM-XV-dzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
