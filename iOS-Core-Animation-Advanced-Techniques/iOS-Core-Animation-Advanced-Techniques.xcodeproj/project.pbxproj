@@ -18,6 +18,10 @@
 		B55EAEA81EF7AFB100429ECD /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAEA71EF7AFB100429ECD /* TitleCell.m */; };
 		B55EAEAD1EF7BC8A00429ECD /* CoordinateSystemController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAEAC1EF7BC8A00429ECD /* CoordinateSystemController.m */; };
 		B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAEB01EF7C81E00429ECD /* HitTestingController.m */; };
+		B5A8DC021EF8EED20099AC99 /* ShadowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC011EF8EED20099AC99 /* ShadowController.m */; };
+		B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC051EF8FA520099AC99 /* AffineController.m */; };
+		B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */; };
+		B5A8DC0F1EF8FE7F0099AC99 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A8DC0E1EF8FE7F0099AC99 /* icon1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,13 @@
 		B55EAEAC1EF7BC8A00429ECD /* CoordinateSystemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateSystemController.m; sourceTree = "<group>"; };
 		B55EAEAF1EF7C81E00429ECD /* HitTestingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitTestingController.h; sourceTree = "<group>"; };
 		B55EAEB01EF7C81E00429ECD /* HitTestingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitTestingController.m; sourceTree = "<group>"; };
+		B5A8DC001EF8EED20099AC99 /* ShadowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowController.h; sourceTree = "<group>"; };
+		B5A8DC011EF8EED20099AC99 /* ShadowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowController.m; sourceTree = "<group>"; };
+		B5A8DC041EF8FA520099AC99 /* AffineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineController.h; sourceTree = "<group>"; };
+		B5A8DC051EF8FA520099AC99 /* AffineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffineController.m; sourceTree = "<group>"; };
+		B5A8DC081EF8FDE60099AC99 /* ThreeDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDController.h; sourceTree = "<group>"; };
+		B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDController.m; sourceTree = "<group>"; };
+		B5A8DC0E1EF8FE7F0099AC99 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +121,7 @@
 		B55EAE721EF7A05000429ECD /* iOS-Core-Animation-Advanced-Techniques */ = {
 			isa = PBXGroup;
 			children = (
+				B5A8DC0B1EF8FE480099AC99 /* Images */,
 				B55EAEA91EF7BC4400429ECD /* Class */,
 				B55EAE761EF7A05000429ECD /* AppDelegate.h */,
 				B55EAE771EF7A05000429ECD /* AppDelegate.m */,
@@ -155,6 +167,9 @@
 		B55EAEA91EF7BC4400429ECD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B5A8DC071EF8FDCB0099AC99 /* 3D变换 */,
+				B5A8DC031EF8F9330099AC99 /* 仿射变换 */,
+				B5A8DBFF1EF8EE830099AC99 /* 阴影 */,
 				B55EAEAE1EF7C81000429ECD /* Hit Testing */,
 				B55EAEAA1EF7BC4400429ECD /* 坐标系 */,
 			);
@@ -177,6 +192,41 @@
 				B55EAEB01EF7C81E00429ECD /* HitTestingController.m */,
 			);
 			path = "Hit Testing";
+			sourceTree = "<group>";
+		};
+		B5A8DBFF1EF8EE830099AC99 /* 阴影 */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8DC001EF8EED20099AC99 /* ShadowController.h */,
+				B5A8DC011EF8EED20099AC99 /* ShadowController.m */,
+			);
+			path = "阴影";
+			sourceTree = "<group>";
+		};
+		B5A8DC031EF8F9330099AC99 /* 仿射变换 */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8DC041EF8FA520099AC99 /* AffineController.h */,
+				B5A8DC051EF8FA520099AC99 /* AffineController.m */,
+			);
+			path = "仿射变换";
+			sourceTree = "<group>";
+		};
+		B5A8DC071EF8FDCB0099AC99 /* 3D变换 */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8DC081EF8FDE60099AC99 /* ThreeDController.h */,
+				B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */,
+			);
+			path = "3D变换";
+			sourceTree = "<group>";
+		};
+		B5A8DC0B1EF8FE480099AC99 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8DC0E1EF8FE7F0099AC99 /* icon1.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +338,7 @@
 			files = (
 				B55EAE831EF7A05000429ECD /* LaunchScreen.storyboard in Resources */,
 				B55EAE801EF7A05000429ECD /* Assets.xcassets in Resources */,
+				B5A8DC0F1EF8FE7F0099AC99 /* icon1.png in Resources */,
 				B55EAE7E1EF7A05000429ECD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,11 +365,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B55EAEA81EF7AFB100429ECD /* TitleCell.m in Sources */,
+				B5A8DC021EF8EED20099AC99 /* ShadowController.m in Sources */,
+				B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */,
 				B55EAE7B1EF7A05000429ECD /* ViewController.m in Sources */,
 				B55EAE781EF7A05000429ECD /* AppDelegate.m in Sources */,
 				B55EAEAD1EF7BC8A00429ECD /* CoordinateSystemController.m in Sources */,
 				B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */,
 				B55EAE751EF7A05000429ECD /* main.m in Sources */,
+				B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,9 @@
 #import "TitleCell.h"
 #import "CoordinateSystemController.h"
 #import "HitTestingController.h"
+#import "ShadowController.h"
+#import "AffineController.h"
+#import "ThreeDController.h"
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *titles;
@@ -51,6 +54,24 @@
         }
             
             break;
+        case 2:
+        {
+            [self performSegueWithIdentifier:@"shadowVC" sender:self];
+        }
+            
+            break;
+        case 3:
+        {
+            [self performSegueWithIdentifier:@"affineVC" sender:self];
+        }
+            
+            break;
+        case 4:
+        {
+            [self performSegueWithIdentifier:@"threeDVC" sender:self];
+        }
+            
+            break;
             
         default:
             break;
@@ -65,6 +86,15 @@
     }else if ([segue.identifier isEqualToString:@"hitVC"]){
         HitTestingController *vc = [segue destinationViewController];
         vc.title = @"Hit testing";
+    }else if ([segue.identifier isEqualToString:@"shadowVC"]){
+        ShadowController *vc = [segue destinationViewController];
+        vc.title = @"阴影";
+    }else if ([segue.identifier isEqualToString:@"affineVC"]){
+        AffineController *vc = [segue destinationViewController];
+        vc.title = @"仿射变换";
+    }else if ([segue.identifier isEqualToString:@"threeDVC"]){
+        ThreeDController *vc = [segue destinationViewController];
+        vc.title = @"3D变化";
     }
 }
 
@@ -72,7 +102,7 @@
 - (NSArray *)titles
 {
     if (!_titles) {
-        _titles = @[@"坐标系",@"Hit Testing"];
+        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化"];
     }
     return _titles;
 }
