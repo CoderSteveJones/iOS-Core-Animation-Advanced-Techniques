@@ -14,6 +14,7 @@
 #import "AffineController.h"
 #import "ThreeDController.h"
 #import "CAShapeLayerController.h"
+#import "CATransformLayerController.h"
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *titles;
@@ -79,6 +80,12 @@
         }
             
             break;
+        case 6:
+        {
+            [self performSegueWithIdentifier:@"CATransformLayer" sender:self];
+        }
+            
+            break;
             
         default:
             break;
@@ -105,6 +112,9 @@
     }else if ([segue.identifier isEqualToString:@"shapeLayer"]){
         CAShapeLayerController *vc = [segue destinationViewController];
         vc.title = @"CAShapeLayer";
+    }else if ([segue.identifier isEqualToString:@"CATransformLayer"]){
+        CATransformLayerController *vc = [segue destinationViewController];
+        vc.title = @"CATransformLayer";
     }
 }
 
@@ -112,7 +122,7 @@
 - (NSArray *)titles
 {
     if (!_titles) {
-        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化",@"CAShapeLayer"];
+        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化",@"CAShapeLayer",@"CATransformLayer"];
     }
     return _titles;
 }

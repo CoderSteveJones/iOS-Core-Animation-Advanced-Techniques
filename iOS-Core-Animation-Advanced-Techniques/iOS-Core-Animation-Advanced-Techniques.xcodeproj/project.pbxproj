@@ -19,6 +19,7 @@
 		B55EAEAD1EF7BC8A00429ECD /* CoordinateSystemController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAEAC1EF7BC8A00429ECD /* CoordinateSystemController.m */; };
 		B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAEB01EF7C81E00429ECD /* HitTestingController.m */; };
 		B58990381F0B2FD400CD089A /* CAShapeLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58990361F0B2FD400CD089A /* CAShapeLayerController.m */; };
+		B589903D1F0B83BC00CD089A /* CATransformLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B589903C1F0B83BC00CD089A /* CATransformLayerController.m */; };
 		B5A8DC021EF8EED20099AC99 /* ShadowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC011EF8EED20099AC99 /* ShadowController.m */; };
 		B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC051EF8FA520099AC99 /* AffineController.m */; };
 		B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */; };
@@ -67,6 +68,8 @@
 		B55EAEB01EF7C81E00429ECD /* HitTestingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitTestingController.m; sourceTree = "<group>"; };
 		B58990351F0B2FD400CD089A /* CAShapeLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerController.h; sourceTree = "<group>"; };
 		B58990361F0B2FD400CD089A /* CAShapeLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerController.m; sourceTree = "<group>"; };
+		B589903B1F0B83BC00CD089A /* CATransformLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformLayerController.h; sourceTree = "<group>"; };
+		B589903C1F0B83BC00CD089A /* CATransformLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransformLayerController.m; sourceTree = "<group>"; };
 		B5A8DC001EF8EED20099AC99 /* ShadowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowController.h; sourceTree = "<group>"; };
 		B5A8DC011EF8EED20099AC99 /* ShadowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowController.m; sourceTree = "<group>"; };
 		B5A8DC041EF8FA520099AC99 /* AffineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineController.h; sourceTree = "<group>"; };
@@ -170,6 +173,7 @@
 		B55EAEA91EF7BC4400429ECD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B589903A1F0B83A600CD089A /* CATransformLayer */,
 				B58990341F0B2FA800CD089A /* CAShapeLayer */,
 				B5A8DC071EF8FDCB0099AC99 /* 3D变换 */,
 				B5A8DC031EF8F9330099AC99 /* 仿射变换 */,
@@ -205,6 +209,15 @@
 				B58990361F0B2FD400CD089A /* CAShapeLayerController.m */,
 			);
 			path = CAShapeLayer;
+			sourceTree = "<group>";
+		};
+		B589903A1F0B83A600CD089A /* CATransformLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B589903B1F0B83BC00CD089A /* CATransformLayerController.h */,
+				B589903C1F0B83BC00CD089A /* CATransformLayerController.m */,
+			);
+			path = CATransformLayer;
 			sourceTree = "<group>";
 		};
 		B5A8DBFF1EF8EE830099AC99 /* 阴影 */ = {
@@ -382,6 +395,7 @@
 				B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */,
 				B55EAE7B1EF7A05000429ECD /* ViewController.m in Sources */,
 				B55EAE781EF7A05000429ECD /* AppDelegate.m in Sources */,
+				B589903D1F0B83BC00CD089A /* CATransformLayerController.m in Sources */,
 				B55EAEAD1EF7BC8A00429ECD /* CoordinateSystemController.m in Sources */,
 				B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */,
 				B55EAE751EF7A05000429ECD /* main.m in Sources */,
