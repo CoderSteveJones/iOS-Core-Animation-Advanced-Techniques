@@ -24,6 +24,24 @@
             </objects>
             <point key="canvasLocation" x="-948" y="145"/>
         </scene>
+        <!--Shape Layer Controller-->
+        <scene sceneID="Ofb-Yf-g88">
+            <objects>
+                <viewController id="bT5-h2-nVd" customClass="CAShapeLayerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l2X-nM-Xxs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eku-Tn-Khh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D3b-Bw-5md">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0he-og-snU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="-889"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -89,6 +107,7 @@
                         <segue destination="tQV-uU-nLU" kind="show" identifier="shadowVC" id="epw-yn-6eb"/>
                         <segue destination="4FS-RL-Ken" kind="show" identifier="affineVC" id="8IE-q5-zU2"/>
                         <segue destination="NiO-W5-IMF" kind="show" identifier="threeDVC" id="izj-5F-Wx2"/>
+                        <segue destination="bT5-h2-nVd" kind="show" identifier="shapeLayer" id="4fn-kt-vgy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

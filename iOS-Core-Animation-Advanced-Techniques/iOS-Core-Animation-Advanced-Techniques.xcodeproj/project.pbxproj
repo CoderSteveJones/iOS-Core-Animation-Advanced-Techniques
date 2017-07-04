@@ -18,6 +18,7 @@
 		B55EAEA81EF7AFB100429ECD /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAEA71EF7AFB100429ECD /* TitleCell.m */; };
 		B55EAEAD1EF7BC8A00429ECD /* CoordinateSystemController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAEAC1EF7BC8A00429ECD /* CoordinateSystemController.m */; };
 		B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAEB01EF7C81E00429ECD /* HitTestingController.m */; };
+		B58990381F0B2FD400CD089A /* CAShapeLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58990361F0B2FD400CD089A /* CAShapeLayerController.m */; };
 		B5A8DC021EF8EED20099AC99 /* ShadowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC011EF8EED20099AC99 /* ShadowController.m */; };
 		B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC051EF8FA520099AC99 /* AffineController.m */; };
 		B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */; };
@@ -64,6 +65,8 @@
 		B55EAEAC1EF7BC8A00429ECD /* CoordinateSystemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateSystemController.m; sourceTree = "<group>"; };
 		B55EAEAF1EF7C81E00429ECD /* HitTestingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitTestingController.h; sourceTree = "<group>"; };
 		B55EAEB01EF7C81E00429ECD /* HitTestingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitTestingController.m; sourceTree = "<group>"; };
+		B58990351F0B2FD400CD089A /* CAShapeLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerController.h; sourceTree = "<group>"; };
+		B58990361F0B2FD400CD089A /* CAShapeLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerController.m; sourceTree = "<group>"; };
 		B5A8DC001EF8EED20099AC99 /* ShadowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowController.h; sourceTree = "<group>"; };
 		B5A8DC011EF8EED20099AC99 /* ShadowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowController.m; sourceTree = "<group>"; };
 		B5A8DC041EF8FA520099AC99 /* AffineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineController.h; sourceTree = "<group>"; };
@@ -167,6 +170,7 @@
 		B55EAEA91EF7BC4400429ECD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B58990341F0B2FA800CD089A /* CAShapeLayer */,
 				B5A8DC071EF8FDCB0099AC99 /* 3D变换 */,
 				B5A8DC031EF8F9330099AC99 /* 仿射变换 */,
 				B5A8DBFF1EF8EE830099AC99 /* 阴影 */,
@@ -192,6 +196,15 @@
 				B55EAEB01EF7C81E00429ECD /* HitTestingController.m */,
 			);
 			path = "Hit Testing";
+			sourceTree = "<group>";
+		};
+		B58990341F0B2FA800CD089A /* CAShapeLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B58990351F0B2FD400CD089A /* CAShapeLayerController.h */,
+				B58990361F0B2FD400CD089A /* CAShapeLayerController.m */,
+			);
+			path = CAShapeLayer;
 			sourceTree = "<group>";
 		};
 		B5A8DBFF1EF8EE830099AC99 /* 阴影 */ = {
@@ -373,6 +386,7 @@
 				B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */,
 				B55EAE751EF7A05000429ECD /* main.m in Sources */,
 				B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */,
+				B58990381F0B2FD400CD089A /* CAShapeLayerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 #import "ShadowController.h"
 #import "AffineController.h"
 #import "ThreeDController.h"
+#import "CAShapeLayerController.h"
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *titles;
@@ -72,6 +73,12 @@
         }
             
             break;
+        case 5:
+        {
+            [self performSegueWithIdentifier:@"shapeLayer" sender:self];
+        }
+            
+            break;
             
         default:
             break;
@@ -95,6 +102,9 @@
     }else if ([segue.identifier isEqualToString:@"threeDVC"]){
         ThreeDController *vc = [segue destinationViewController];
         vc.title = @"3D变化";
+    }else if ([segue.identifier isEqualToString:@"shapeLayer"]){
+        CAShapeLayerController *vc = [segue destinationViewController];
+        vc.title = @"CAShapeLayer";
     }
 }
 
@@ -102,7 +112,7 @@
 - (NSArray *)titles
 {
     if (!_titles) {
-        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化"];
+        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化",@"CAShapeLayer"];
     }
     return _titles;
 }
