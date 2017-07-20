@@ -24,6 +24,52 @@
             </objects>
             <point key="canvasLocation" x="-948" y="145"/>
         </scene>
+        <!--CAGradientLayer-->
+        <scene sceneID="5vu-1Y-Z28">
+            <objects>
+                <viewController title="CAGradientLayer" id="F7Z-PQ-UWZ" customClass="CAGradientLayerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h3d-oh-u4W"/>
+                        <viewControllerLayoutGuide type="bottom" id="tri-cL-DLz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sRZ-oK-gUj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDK-Kr-lna">
+                                <rect key="frame" x="87" y="74" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.34901961679999999" blue="0.1921568662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ShD-eC-PZC"/>
+                                    <constraint firstAttribute="width" constant="200" id="sw6-vQ-qr7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaL-07-aBq">
+                                <rect key="frame" x="87" y="324" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="KXq-Pz-4SG"/>
+                                    <constraint firstAttribute="width" constant="200" id="ybu-du-xj4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PDK-Kr-lna" firstAttribute="centerX" secondItem="sRZ-oK-gUj" secondAttribute="centerX" id="hos-1T-zXv"/>
+                            <constraint firstItem="qaL-07-aBq" firstAttribute="top" secondItem="PDK-Kr-lna" secondAttribute="bottom" constant="50" id="phY-x8-Y6M"/>
+                            <constraint firstItem="qaL-07-aBq" firstAttribute="centerX" secondItem="PDK-Kr-lna" secondAttribute="centerX" id="r1z-Tv-iGJ"/>
+                            <constraint firstItem="PDK-Kr-lna" firstAttribute="top" secondItem="h3d-oh-u4W" secondAttribute="bottom" constant="10" id="yaS-1k-WzG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="layerView" destination="PDK-Kr-lna" id="dQQ-VP-vLG"/>
+                        <outlet property="layerView1" destination="qaL-07-aBq" id="YKv-Jn-tDi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQK-n5-5QT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1254" y="-671"/>
+        </scene>
         <!--Shape Layer Controller-->
         <scene sceneID="Ofb-Yf-g88">
             <objects>
@@ -127,6 +173,7 @@
                         <segue destination="NiO-W5-IMF" kind="show" identifier="threeDVC" id="izj-5F-Wx2"/>
                         <segue destination="bT5-h2-nVd" kind="show" identifier="shapeLayer" id="4fn-kt-vgy"/>
                         <segue destination="7tC-5X-MHu" kind="show" identifier="CATransformLayer" id="XGR-3h-PB1"/>
+                        <segue destination="F7Z-PQ-UWZ" kind="show" identifier="CAGradientLayer" id="0aA-nN-boT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

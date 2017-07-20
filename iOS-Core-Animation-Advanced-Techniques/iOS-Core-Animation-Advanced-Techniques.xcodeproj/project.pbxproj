@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B516C7E01F2036E50029501B /* CAGradientLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B516C7DF1F2036E50029501B /* CAGradientLayerController.m */; };
 		B55EAE751EF7A05000429ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAE741EF7A05000429ECD /* main.m */; };
 		B55EAE781EF7A05000429ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAE771EF7A05000429ECD /* AppDelegate.m */; };
 		B55EAE7B1EF7A05000429ECD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAE7A1EF7A05000429ECD /* ViewController.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B516C7DE1F2036E50029501B /* CAGradientLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerController.h; sourceTree = "<group>"; };
+		B516C7DF1F2036E50029501B /* CAGradientLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerController.m; sourceTree = "<group>"; };
 		B55EAE701EF7A05000429ECD /* iOS-Core-Animation-Advanced-Techniques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Core-Animation-Advanced-Techniques.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55EAE741EF7A05000429ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B55EAE761EF7A05000429ECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B516C7DD1F2036CA0029501B /* CAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B516C7DE1F2036E50029501B /* CAGradientLayerController.h */,
+				B516C7DF1F2036E50029501B /* CAGradientLayerController.m */,
+			);
+			path = CAGradientLayer;
+			sourceTree = "<group>";
+		};
 		B55EAE671EF7A05000429ECD = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +185,7 @@
 		B55EAEA91EF7BC4400429ECD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B516C7DD1F2036CA0029501B /* CAGradientLayer */,
 				B589903A1F0B83A600CD089A /* CATransformLayer */,
 				B58990341F0B2FA800CD089A /* CAShapeLayer */,
 				B5A8DC071EF8FDCB0099AC99 /* 3D变换 */,
@@ -395,6 +408,7 @@
 				B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */,
 				B55EAE7B1EF7A05000429ECD /* ViewController.m in Sources */,
 				B55EAE781EF7A05000429ECD /* AppDelegate.m in Sources */,
+				B516C7E01F2036E50029501B /* CAGradientLayerController.m in Sources */,
 				B589903D1F0B83BC00CD089A /* CATransformLayerController.m in Sources */,
 				B55EAEAD1EF7BC8A00429ECD /* CoordinateSystemController.m in Sources */,
 				B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */,
