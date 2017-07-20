@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B516C7E01F2036E50029501B /* CAGradientLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B516C7DF1F2036E50029501B /* CAGradientLayerController.m */; };
+		B516C7E41F2042010029501B /* CAEmitterLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B516C7E31F2042010029501B /* CAEmitterLayerController.m */; };
+		B516C7E61F2043CC0029501B /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = B516C7E51F2043CC0029501B /* icon2.png */; };
 		B55EAE751EF7A05000429ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAE741EF7A05000429ECD /* main.m */; };
 		B55EAE781EF7A05000429ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAE771EF7A05000429ECD /* AppDelegate.m */; };
 		B55EAE7B1EF7A05000429ECD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAE7A1EF7A05000429ECD /* ViewController.m */; };
@@ -47,6 +49,9 @@
 /* Begin PBXFileReference section */
 		B516C7DE1F2036E50029501B /* CAGradientLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerController.h; sourceTree = "<group>"; };
 		B516C7DF1F2036E50029501B /* CAGradientLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerController.m; sourceTree = "<group>"; };
+		B516C7E21F2042010029501B /* CAEmitterLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerController.h; sourceTree = "<group>"; };
+		B516C7E31F2042010029501B /* CAEmitterLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerController.m; sourceTree = "<group>"; };
+		B516C7E51F2043CC0029501B /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
 		B55EAE701EF7A05000429ECD /* iOS-Core-Animation-Advanced-Techniques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Core-Animation-Advanced-Techniques.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55EAE741EF7A05000429ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B55EAE761EF7A05000429ECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +119,15 @@
 				B516C7DF1F2036E50029501B /* CAGradientLayerController.m */,
 			);
 			path = CAGradientLayer;
+			sourceTree = "<group>";
+		};
+		B516C7E11F2041F00029501B /* CAEmitterLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B516C7E21F2042010029501B /* CAEmitterLayerController.h */,
+				B516C7E31F2042010029501B /* CAEmitterLayerController.m */,
+			);
+			path = CAEmitterLayer;
 			sourceTree = "<group>";
 		};
 		B55EAE671EF7A05000429ECD = {
@@ -185,6 +199,7 @@
 		B55EAEA91EF7BC4400429ECD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B516C7E11F2041F00029501B /* CAEmitterLayer */,
 				B516C7DD1F2036CA0029501B /* CAGradientLayer */,
 				B589903A1F0B83A600CD089A /* CATransformLayer */,
 				B58990341F0B2FA800CD089A /* CAShapeLayer */,
@@ -264,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				B5A8DC0E1EF8FE7F0099AC99 /* icon1.png */,
+				B516C7E51F2043CC0029501B /* icon2.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -375,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B516C7E61F2043CC0029501B /* icon2.png in Resources */,
 				B55EAE831EF7A05000429ECD /* LaunchScreen.storyboard in Resources */,
 				B55EAE801EF7A05000429ECD /* Assets.xcassets in Resources */,
 				B5A8DC0F1EF8FE7F0099AC99 /* icon1.png in Resources */,
@@ -406,6 +423,7 @@
 				B55EAEA81EF7AFB100429ECD /* TitleCell.m in Sources */,
 				B5A8DC021EF8EED20099AC99 /* ShadowController.m in Sources */,
 				B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */,
+				B516C7E41F2042010029501B /* CAEmitterLayerController.m in Sources */,
 				B55EAE7B1EF7A05000429ECD /* ViewController.m in Sources */,
 				B55EAE781EF7A05000429ECD /* AppDelegate.m in Sources */,
 				B516C7E01F2036E50029501B /* CAGradientLayerController.m in Sources */,

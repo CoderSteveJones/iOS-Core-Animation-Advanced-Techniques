@@ -16,6 +16,7 @@
 #import "CAShapeLayerController.h"
 #import "CATransformLayerController.h"
 #import "CAGradientLayerController.h"
+#import "CAEmitterLayerController.h"
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *titles;
@@ -93,6 +94,12 @@
         }
             
             break;
+        case 8:
+        {
+            [self performSegueWithIdentifier:@"CAEmitterLayer" sender:self];
+        }
+            
+            break;
             
         default:
             break;
@@ -125,6 +132,9 @@
     }else if ([segue.identifier isEqualToString:@"CAGradientLayer"]) {
         CAGradientLayerController *vc =[segue destinationViewController];
         vc.title = @"CAGradientLayer";
+    }else if ([segue.identifier isEqualToString:@"CAEmitterLayer"]){
+        CAEmitterLayerController *vc = [segue destinationViewController];
+        vc.title = @"CAEmitterLayer";
     }
 }
 
@@ -132,7 +142,7 @@
 - (NSArray *)titles
 {
     if (!_titles) {
-        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化",@"CAShapeLayer",@"CATransformLayer",@"CAGradientLayer"];
+        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化",@"CAShapeLayer",@"CATransformLayer",@"CAGradientLayer",@"CAEmitterLayer"];
     }
     return _titles;
 }

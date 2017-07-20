@@ -24,6 +24,41 @@
             </objects>
             <point key="canvasLocation" x="-948" y="145"/>
         </scene>
+        <!--Emitter Layer Controller-->
+        <scene sceneID="3dB-fa-GGV">
+            <objects>
+                <viewController id="7Zz-X9-fy4" customClass="CAEmitterLayerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RmD-Ps-MRf"/>
+                        <viewControllerLayoutGuide type="bottom" id="UIP-7e-Yrh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wul-yz-8nx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41v-og-A6G">
+                                <rect key="frame" x="183.5" y="329.5" width="8" height="8"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="doJ-bg-0Gh"/>
+                                    <constraint firstAttribute="width" constant="8" id="rr3-0T-RYh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="41v-og-A6G" firstAttribute="centerX" secondItem="wul-yz-8nx" secondAttribute="centerX" id="7tr-Uo-QjR"/>
+                            <constraint firstItem="41v-og-A6G" firstAttribute="centerY" secondItem="wul-yz-8nx" secondAttribute="centerY" id="Bbh-eN-3Hg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="layerView" destination="41v-og-A6G" id="3e4-Ed-Vhn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgf-jf-zwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1927" y="-466"/>
+        </scene>
         <!--CAGradientLayer-->
         <scene sceneID="5vu-1Y-Z28">
             <objects>
@@ -174,11 +209,12 @@
                         <segue destination="bT5-h2-nVd" kind="show" identifier="shapeLayer" id="4fn-kt-vgy"/>
                         <segue destination="7tC-5X-MHu" kind="show" identifier="CATransformLayer" id="XGR-3h-PB1"/>
                         <segue destination="F7Z-PQ-UWZ" kind="show" identifier="CAGradientLayer" id="0aA-nN-boT"/>
+                        <segue destination="7Zz-X9-fy4" kind="show" identifier="CAEmitterLayer" id="RkG-7a-0Nj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98" y="-48"/>
+            <point key="canvasLocation" x="-258" y="-54"/>
         </scene>
         <!--Coordinate System Controller-->
         <scene sceneID="FdY-61-Kpu">
