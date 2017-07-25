@@ -18,6 +18,7 @@
 #import "CAGradientLayerController.h"
 #import "CAEmitterLayerController.h"
 #import "CATransactionController.h"
+#import "CABasicAnimationController.h"
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *titles;
@@ -107,7 +108,12 @@
         }
             
             break;
+        case 10:
+        {
+            [self performSegueWithIdentifier:@"CABasicAnimation" sender:self];
+        }
             
+            break;
         default:
             break;
     }
@@ -145,6 +151,9 @@
     }else if ([segue.identifier isEqualToString:@"CATransaction"]){
         CATransactionController *vc = [segue destinationViewController];
         vc.title = @"CATransaction";
+    }else if ([segue.identifier isEqualToString:@"CABasicAnimation"]){
+        CABasicAnimationController *vc = [segue destinationViewController];
+        vc.title = @"CABasicAnimation";
     }
 }
 
@@ -152,7 +161,7 @@
 - (NSArray *)titles
 {
     if (!_titles) {
-        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化",@"CAShapeLayer",@"CATransformLayer",@"CAGradientLayer",@"CAEmitterLayer",@"CATransaction"];
+        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化",@"CAShapeLayer",@"CATransformLayer",@"CAGradientLayer",@"CAEmitterLayer",@"CATransaction",@"CABasicAnimation"];
     }
     return _titles;
 }

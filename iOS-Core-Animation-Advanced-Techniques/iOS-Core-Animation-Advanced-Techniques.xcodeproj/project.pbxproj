@@ -28,6 +28,7 @@
 		B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */; };
 		B5A8DC0F1EF8FE7F0099AC99 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A8DC0E1EF8FE7F0099AC99 /* icon1.png */; };
 		B5B01B601F26D959009E209E /* CATransactionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B01B5F1F26D959009E209E /* CATransactionController.m */; };
+		B5B01B641F2711F7009E209E /* CABasicAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B01B631F2711F7009E209E /* CABasicAnimationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		B5A8DC0E1EF8FE7F0099AC99 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
 		B5B01B5E1F26D959009E209E /* CATransactionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransactionController.h; sourceTree = "<group>"; };
 		B5B01B5F1F26D959009E209E /* CATransactionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransactionController.m; sourceTree = "<group>"; };
+		B5B01B621F2711F7009E209E /* CABasicAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationController.h; sourceTree = "<group>"; };
+		B5B01B631F2711F7009E209E /* CABasicAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,7 @@
 		B55EAEA91EF7BC4400429ECD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B5B01B611F2711E0009E209E /* CABasicAnimation */,
 				B5B01B5D1F26D936009E209E /* 事务 */,
 				B516C7E11F2041F00029501B /* CAEmitterLayer */,
 				B516C7DD1F2036CA0029501B /* CAGradientLayer */,
@@ -295,6 +299,15 @@
 				B5B01B5F1F26D959009E209E /* CATransactionController.m */,
 			);
 			path = "事务";
+			sourceTree = "<group>";
+		};
+		B5B01B611F2711E0009E209E /* CABasicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B5B01B621F2711F7009E209E /* CABasicAnimationController.h */,
+				B5B01B631F2711F7009E209E /* CABasicAnimationController.m */,
+			);
+			path = CABasicAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +454,7 @@
 				B55EAE781EF7A05000429ECD /* AppDelegate.m in Sources */,
 				B516C7E01F2036E50029501B /* CAGradientLayerController.m in Sources */,
 				B589903D1F0B83BC00CD089A /* CATransformLayerController.m in Sources */,
+				B5B01B641F2711F7009E209E /* CABasicAnimationController.m in Sources */,
 				B55EAEAD1EF7BC8A00429ECD /* CoordinateSystemController.m in Sources */,
 				B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */,
 				B55EAE751EF7A05000429ECD /* main.m in Sources */,
