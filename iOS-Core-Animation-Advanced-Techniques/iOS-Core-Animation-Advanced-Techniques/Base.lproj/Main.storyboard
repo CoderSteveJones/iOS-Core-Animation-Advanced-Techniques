@@ -8,6 +8,57 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Transaction Controller-->
+        <scene sceneID="Fa5-3Q-rKa">
+            <objects>
+                <viewController id="zG6-8G-G2M" customClass="CATransactionController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="trC-cv-ALT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gxi-Tl-KiZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pgg-nn-o7C" customClass="catransa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Og0-7a-33o">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.34901961679999999" blue="0.1921568662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="OPg-GY-9JK"/>
+                                    <constraint firstAttribute="width" constant="200" id="YrE-kW-5Xe"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdc-XF-LkM">
+                                <rect key="frame" x="147" y="493.5" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.58431372550000005" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8Rp-FC-QT2"/>
+                                    <constraint firstAttribute="width" constant="80" id="MHz-pG-GJZ"/>
+                                </constraints>
+                                <state key="normal" title="Click">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.34901961679999999" blue="0.1921568662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="zG6-8G-G2M" eventType="touchUpInside" id="Dxc-o1-Bmo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kdc-XF-LkM" firstAttribute="centerX" secondItem="Pgg-nn-o7C" secondAttribute="centerX" id="1Qc-wZ-1sg"/>
+                            <constraint firstItem="Og0-7a-33o" firstAttribute="centerY" secondItem="Pgg-nn-o7C" secondAttribute="centerY" id="96R-Dw-uLe"/>
+                            <constraint firstItem="kdc-XF-LkM" firstAttribute="top" secondItem="Og0-7a-33o" secondAttribute="bottom" constant="60" id="bgh-Nb-ymc"/>
+                            <constraint firstItem="Og0-7a-33o" firstAttribute="centerX" secondItem="Pgg-nn-o7C" secondAttribute="centerX" id="dIz-dt-T6W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="layerView" destination="Og0-7a-33o" id="Ewn-bR-AJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zur-Td-BHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1945" y="253"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Onk-hO-f35">
             <objects>
@@ -22,7 +73,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjV-QC-lUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-948" y="145"/>
+            <point key="canvasLocation" x="-1214" y="564"/>
         </scene>
         <!--Emitter Layer Controller-->
         <scene sceneID="3dB-fa-GGV">
@@ -57,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgf-jf-zwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1927" y="-466"/>
+            <point key="canvasLocation" x="-2062" y="-471"/>
         </scene>
         <!--CAGradientLayer-->
         <scene sceneID="5vu-1Y-Z28">
@@ -210,6 +261,7 @@
                         <segue destination="7tC-5X-MHu" kind="show" identifier="CATransformLayer" id="XGR-3h-PB1"/>
                         <segue destination="F7Z-PQ-UWZ" kind="show" identifier="CAGradientLayer" id="0aA-nN-boT"/>
                         <segue destination="7Zz-X9-fy4" kind="show" identifier="CAEmitterLayer" id="RkG-7a-0Nj"/>
+                        <segue destination="zG6-8G-G2M" kind="show" identifier="CATransaction" id="2bI-ZA-xWe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

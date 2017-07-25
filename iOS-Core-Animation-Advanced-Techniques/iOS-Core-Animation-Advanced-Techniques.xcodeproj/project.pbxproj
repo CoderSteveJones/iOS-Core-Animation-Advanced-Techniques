@@ -27,6 +27,7 @@
 		B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC051EF8FA520099AC99 /* AffineController.m */; };
 		B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */; };
 		B5A8DC0F1EF8FE7F0099AC99 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A8DC0E1EF8FE7F0099AC99 /* icon1.png */; };
+		B5B01B601F26D959009E209E /* CATransactionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B01B5F1F26D959009E209E /* CATransactionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		B5A8DC081EF8FDE60099AC99 /* ThreeDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDController.h; sourceTree = "<group>"; };
 		B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDController.m; sourceTree = "<group>"; };
 		B5A8DC0E1EF8FE7F0099AC99 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		B5B01B5E1F26D959009E209E /* CATransactionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransactionController.h; sourceTree = "<group>"; };
+		B5B01B5F1F26D959009E209E /* CATransactionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransactionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,7 @@
 		B55EAEA91EF7BC4400429ECD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B5B01B5D1F26D936009E209E /* 事务 */,
 				B516C7E11F2041F00029501B /* CAEmitterLayer */,
 				B516C7DD1F2036CA0029501B /* CAGradientLayer */,
 				B589903A1F0B83A600CD089A /* CATransformLayer */,
@@ -282,6 +286,15 @@
 				B516C7E51F2043CC0029501B /* icon2.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		B5B01B5D1F26D936009E209E /* 事务 */ = {
+			isa = PBXGroup;
+			children = (
+				B5B01B5E1F26D959009E209E /* CATransactionController.h */,
+				B5B01B5F1F26D959009E209E /* CATransactionController.m */,
+			);
+			path = "事务";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +445,7 @@
 				B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */,
 				B55EAE751EF7A05000429ECD /* main.m in Sources */,
 				B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */,
+				B5B01B601F26D959009E209E /* CATransactionController.m in Sources */,
 				B58990381F0B2FD400CD089A /* CAShapeLayerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
