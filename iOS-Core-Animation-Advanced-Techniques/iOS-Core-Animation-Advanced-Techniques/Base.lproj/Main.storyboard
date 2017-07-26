@@ -87,28 +87,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTO-bZ-4zc">
-                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bd7-Ej-yoX">
+                                <rect key="frame" x="20" y="264" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="kPn-kO-na1"/>
-                                    <constraint firstAttribute="height" constant="200" id="xpS-8I-g93"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZTQ-sm-zTn"/>
+                                    <constraint firstAttribute="width" constant="50" id="mlh-PT-rpT"/>
                                 </constraints>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HTO-bZ-4zc" firstAttribute="centerY" secondItem="uVG-Fe-LPm" secondAttribute="centerY" id="7L6-r9-ZWS"/>
-                            <constraint firstItem="HTO-bZ-4zc" firstAttribute="centerX" secondItem="uVG-Fe-LPm" secondAttribute="centerX" id="QPZ-Xb-hUN"/>
+                            <constraint firstItem="bd7-Ej-yoX" firstAttribute="leading" secondItem="uVG-Fe-LPm" secondAttribute="leading" constant="20" id="LzM-br-AUu"/>
+                            <constraint firstItem="bd7-Ej-yoX" firstAttribute="top" secondItem="F03-gq-OqO" secondAttribute="bottom" constant="200" id="o3i-yJ-bl9"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="layerView" destination="HTO-bZ-4zc" id="khB-FK-O5n"/>
+                        <outlet property="layerImgView" destination="bd7-Ej-yoX" id="jOl-Iq-V5R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cs9-OF-aRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1116" y="1262"/>
+            <point key="canvasLocation" x="-1116" y="1261.6191904047978"/>
         </scene>
         <!--Emitter Layer Controller-->
         <scene sceneID="3dB-fa-GGV">

@@ -23,6 +23,7 @@
 		B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EAEB01EF7C81E00429ECD /* HitTestingController.m */; };
 		B58990381F0B2FD400CD089A /* CAShapeLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58990361F0B2FD400CD089A /* CAShapeLayerController.m */; };
 		B589903D1F0B83BC00CD089A /* CATransformLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B589903C1F0B83BC00CD089A /* CATransformLayerController.m */; };
+		B591E77B1F283AC20009FF83 /* UIView+TC.m in Sources */ = {isa = PBXBuildFile; fileRef = B591E7761F283AC20009FF83 /* UIView+TC.m */; };
 		B5A8DC021EF8EED20099AC99 /* ShadowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC011EF8EED20099AC99 /* ShadowController.m */; };
 		B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC051EF8FA520099AC99 /* AffineController.m */; };
 		B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */; };
@@ -80,6 +81,8 @@
 		B58990361F0B2FD400CD089A /* CAShapeLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerController.m; sourceTree = "<group>"; };
 		B589903B1F0B83BC00CD089A /* CATransformLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformLayerController.h; sourceTree = "<group>"; };
 		B589903C1F0B83BC00CD089A /* CATransformLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransformLayerController.m; sourceTree = "<group>"; };
+		B591E7751F283AC20009FF83 /* UIView+TC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TC.h"; sourceTree = "<group>"; };
+		B591E7761F283AC20009FF83 /* UIView+TC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TC.m"; sourceTree = "<group>"; };
 		B5A8DC001EF8EED20099AC99 /* ShadowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowController.h; sourceTree = "<group>"; };
 		B5A8DC011EF8EED20099AC99 /* ShadowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowController.m; sourceTree = "<group>"; };
 		B5A8DC041EF8FA520099AC99 /* AffineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineController.h; sourceTree = "<group>"; };
@@ -205,6 +208,7 @@
 		B55EAEA91EF7BC4400429ECD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B591E76C1F283AC20009FF83 /* Category */,
 				B5B01B611F2711E0009E209E /* CABasicAnimation */,
 				B5B01B5D1F26D936009E209E /* 事务 */,
 				B516C7E11F2041F00029501B /* CAEmitterLayer */,
@@ -254,6 +258,15 @@
 				B589903C1F0B83BC00CD089A /* CATransformLayerController.m */,
 			);
 			path = CATransformLayer;
+			sourceTree = "<group>";
+		};
+		B591E76C1F283AC20009FF83 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B591E7751F283AC20009FF83 /* UIView+TC.h */,
+				B591E7761F283AC20009FF83 /* UIView+TC.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		B5A8DBFF1EF8EE830099AC99 /* 阴影 */ = {
@@ -460,6 +473,7 @@
 				B55EAE751EF7A05000429ECD /* main.m in Sources */,
 				B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */,
 				B5B01B601F26D959009E209E /* CATransactionController.m in Sources */,
+				B591E77B1F283AC20009FF83 /* UIView+TC.m in Sources */,
 				B58990381F0B2FD400CD089A /* CAShapeLayerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

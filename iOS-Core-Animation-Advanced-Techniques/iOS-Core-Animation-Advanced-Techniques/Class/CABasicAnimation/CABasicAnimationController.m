@@ -7,9 +7,9 @@
 //
 
 #import "CABasicAnimationController.h"
-
+#import "UIView+TC.h"
 @interface CABasicAnimationController ()
-@property (weak, nonatomic) IBOutlet UIView *layerView;
+@property (weak, nonatomic) IBOutlet UIImageView *layerImgView;
 
 @end
 
@@ -19,12 +19,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // 缩放动画
     CALayer *layer = [CALayer layer];
-    layer.frame = CGRectMake(0, 0, 50, 50);
+    layer.frame = CGRectMake(20, 80, 50, 50);
     layer.backgroundColor = [UIColor colorWithRed:241.0/255 green:158.0/255 blue:195.0/255 alpha:1.0].CGColor;
     layer.cornerRadius = 25;
     layer.masksToBounds = YES;
-    [self.layerView.layer addSublayer:layer];
+    [self.view.layer addSublayer:layer];
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     animation.fromValue = [NSNumber numberWithFloat:1.0];
@@ -37,22 +38,79 @@
     
     [layer addAnimation:animation forKey:@"scaleAnimation"];
     
+    //Img点击 (缩放动画)
+    self.layerImgView.layer.cornerRadius = 25;
+    self.layerImgView.layer.masksToBounds = YES;
+    self.layerImgView.layer.backgroundColor = [UIColor colorWithRed:241.0/255 green:158.0/255 blue:195.0/255 alpha:1.0].CGColor;
+    [self.layerImgView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        CABasicAnimation *ani = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+        ani.fromValue = [NSNumber numberWithFloat:1.0];
+        ani.toValue = [NSNumber numberWithFloat:1.3];
+        ani.autoreverses = YES;
+        ani.fillMode = kCAFillModeForwards;
+        animation.removedOnCompletion = NO;
+        animation.duration = 1;
+        [self.layerImgView.layer addAnimation:ani forKey:@"tapAni"];
+    }];
+    
+    // 平移动画
+    CALayer *layer1 = [CALayer layer];
+    layer1.frame = CGRectMake(20, CGRectGetMaxY(layer.frame) + 30, 50, 50);
+    layer1.backgroundColor = [UIColor colorWithRed:241.0/255 green:158.0/255 blue:195.0/255 alpha:1.0].CGColor;
+    layer1.cornerRadius = 25;
+    layer1.masksToBounds = YES;
+    [self.view.layer addSublayer:layer1];
+    
+    CABasicAnimation *animation1 = [CABasicAnimation animationWithKeyPath:@"position"];
+    animation1.fromValue = [NSValue valueWithCGPoint:layer1.position];
+    animation1.toValue = [NSValue valueWithCGPoint:CGPointMake(300, CGRectGetMaxY(layer.frame) + 55)];
+    animation1.autoreverses = YES;
+    animation1.fillMode = kCAFillModeForwards;
+    animation1.removedOnCompletion = NO;
+    animation1.duration = 1;
+    animation1.repeatCount = MAXFLOAT;
+    animation1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [layer1 addAnimation:animation1 forKey:@"positionAnimation"];
+    
+    // 旋转动画
+    CALayer *layer2 = [CALayer layer];
+    layer2.frame = CGRectMake(20, CGRectGetMaxY(self.layerImgView.frame)+ 20, 50, 50);
+    layer2.backgroundColor = [UIColor colorWithRed:241.0/255 green:158.0/255 blue:195.0/255 alpha:1.0].CGColor;
+    layer2.cornerRadius = 25;
+    layer2.masksToBounds = YES;
+    [self.view.layer addSublayer:layer2];
+    
+    CABasicAnimation *animation2 = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
+    animation2.fromValue = [NSNumber numberWithFloat:0.0];
+    animation2.toValue = [NSNumber numberWithFloat:2 * M_PI];
+    animation2.autoreverses = YES;
+    animation2.fillMode = kCAFillModeForwards;
+    animation2.removedOnCompletion = NO;
+    animation2.duration = 1;
+    animation2.repeatCount = MAXFLOAT;
+    animation2.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    [layer2 addAnimation:animation2 forKey:@"roationAni"];
+    
+    
+    
+    // 动画组
+    CALayer *layer3 = [CALayer layer];
+    layer3.frame = CGRectMake(20, CGRectGetMaxY(layer2.frame)+ 20, 50, 50);
+    layer3.backgroundColor = [UIColor colorWithRed:241.0/255 green:158.0/255 blue:195.0/255 alpha:1.0].CGColor;
+    layer3.cornerRadius = 25;
+    layer3.masksToBounds = YES;
+    [self.view.layer addSublayer:layer3];
+    
+    
+    CAAnimationGroup *groupAni = [CAAnimationGroup animation];
+    groupAni.animations = @[animation,animation2];
+    groupAni.duration = 2;
+    groupAni.repeatCount = MAXFLOAT;
+    
+    [layer3 addAnimation:groupAni forKey:@"groupAni"];
+    
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
