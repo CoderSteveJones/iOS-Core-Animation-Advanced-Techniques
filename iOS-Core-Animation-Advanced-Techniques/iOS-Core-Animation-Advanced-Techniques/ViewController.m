@@ -112,7 +112,11 @@
         {
             [self performSegueWithIdentifier:@"CABasicAnimation" sender:self];
         }
-            
+        case 11:
+        {
+            [self performSegueWithIdentifier:@"jnwspring" sender:self];
+        }
+  
             break;
         default:
             break;
@@ -154,6 +158,9 @@
     }else if ([segue.identifier isEqualToString:@"CABasicAnimation"]){
         CABasicAnimationController *vc = [segue destinationViewController];
         vc.title = @"CABasicAnimation";
+    }else if ([segue.identifier isEqualToString:@"jnwspring"]){
+        CABasicAnimationController *vc = [segue destinationViewController];
+        vc.title = @"JNWSpringAnimation";
     }
 }
 
@@ -161,7 +168,7 @@
 - (NSArray *)titles
 {
     if (!_titles) {
-        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化",@"CAShapeLayer",@"CATransformLayer",@"CAGradientLayer",@"CAEmitterLayer",@"CATransaction",@"CABasicAnimation"];
+        _titles = @[@"坐标系",@"Hit Testing",@"阴影",@"仿射变换",@"3D变化",@"CAShapeLayer",@"CATransformLayer",@"CAGradientLayer",@"CAEmitterLayer",@"CATransaction",@"CABasicAnimation",@"JNWSpringAnimation"];
     }
     return _titles;
 }

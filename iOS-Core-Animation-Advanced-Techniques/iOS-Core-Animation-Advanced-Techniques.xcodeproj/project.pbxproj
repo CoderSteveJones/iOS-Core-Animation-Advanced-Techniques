@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04071C71D73BEDCB5244ED97 /* Pods_iOS_Core_Animation_Advanced_Techniques.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7FC2756C5A3EA835EFE911 /* Pods_iOS_Core_Animation_Advanced_Techniques.framework */; };
 		B516C7E01F2036E50029501B /* CAGradientLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B516C7DF1F2036E50029501B /* CAGradientLayerController.m */; };
 		B516C7E41F2042010029501B /* CAEmitterLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B516C7E31F2042010029501B /* CAEmitterLayerController.m */; };
 		B516C7E61F2043CC0029501B /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = B516C7E51F2043CC0029501B /* icon2.png */; };
@@ -28,6 +29,9 @@
 		B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC051EF8FA520099AC99 /* AffineController.m */; };
 		B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */; };
 		B5A8DC0F1EF8FE7F0099AC99 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A8DC0E1EF8FE7F0099AC99 /* icon1.png */; };
+		B5AB2D261F3964D200C0CBA4 /* JNWSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB2D231F3964D200C0CBA4 /* JNWSpringAnimation.m */; };
+		B5AB2D271F3964D200C0CBA4 /* NSValue+JNWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB2D251F3964D200C0CBA4 /* NSValue+JNWAdditions.m */; };
+		B5AB2D2D1F3966F500C0CBA4 /* JNWSpringController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AB2D2C1F3966F500C0CBA4 /* JNWSpringController.m */; };
 		B5B01B601F26D959009E209E /* CATransactionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B01B5F1F26D959009E209E /* CATransactionController.m */; };
 		B5B01B641F2711F7009E209E /* CABasicAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B01B631F2711F7009E209E /* CABasicAnimationController.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49E217D37CAB9EFD01904E79 /* Pods-iOS-Core-Animation-Advanced-Techniques.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Core-Animation-Advanced-Techniques.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Core-Animation-Advanced-Techniques/Pods-iOS-Core-Animation-Advanced-Techniques.release.xcconfig"; sourceTree = "<group>"; };
+		650F18F6FC7FBE90760DC1D8 /* Pods-iOS-Core-Animation-Advanced-Techniques.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Core-Animation-Advanced-Techniques.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Core-Animation-Advanced-Techniques/Pods-iOS-Core-Animation-Advanced-Techniques.debug.xcconfig"; sourceTree = "<group>"; };
 		B516C7DE1F2036E50029501B /* CAGradientLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerController.h; sourceTree = "<group>"; };
 		B516C7DF1F2036E50029501B /* CAGradientLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerController.m; sourceTree = "<group>"; };
 		B516C7E21F2042010029501B /* CAEmitterLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerController.h; sourceTree = "<group>"; };
@@ -90,10 +96,17 @@
 		B5A8DC081EF8FDE60099AC99 /* ThreeDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDController.h; sourceTree = "<group>"; };
 		B5A8DC091EF8FDE60099AC99 /* ThreeDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDController.m; sourceTree = "<group>"; };
 		B5A8DC0E1EF8FE7F0099AC99 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		B5AB2D221F3964D200C0CBA4 /* JNWSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNWSpringAnimation.h; sourceTree = "<group>"; };
+		B5AB2D231F3964D200C0CBA4 /* JNWSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNWSpringAnimation.m; sourceTree = "<group>"; };
+		B5AB2D241F3964D200C0CBA4 /* NSValue+JNWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+JNWAdditions.h"; sourceTree = "<group>"; };
+		B5AB2D251F3964D200C0CBA4 /* NSValue+JNWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+JNWAdditions.m"; sourceTree = "<group>"; };
+		B5AB2D2B1F3966F500C0CBA4 /* JNWSpringController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNWSpringController.h; sourceTree = "<group>"; };
+		B5AB2D2C1F3966F500C0CBA4 /* JNWSpringController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNWSpringController.m; sourceTree = "<group>"; };
 		B5B01B5E1F26D959009E209E /* CATransactionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransactionController.h; sourceTree = "<group>"; };
 		B5B01B5F1F26D959009E209E /* CATransactionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransactionController.m; sourceTree = "<group>"; };
 		B5B01B621F2711F7009E209E /* CABasicAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationController.h; sourceTree = "<group>"; };
 		B5B01B631F2711F7009E209E /* CABasicAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationController.m; sourceTree = "<group>"; };
+		BB7FC2756C5A3EA835EFE911 /* Pods_iOS_Core_Animation_Advanced_Techniques.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Core_Animation_Advanced_Techniques.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04071C71D73BEDCB5244ED97 /* Pods_iOS_Core_Animation_Advanced_Techniques.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +135,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		120E4A34E98EECF388E4700F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				650F18F6FC7FBE90760DC1D8 /* Pods-iOS-Core-Animation-Advanced-Techniques.debug.xcconfig */,
+				49E217D37CAB9EFD01904E79 /* Pods-iOS-Core-Animation-Advanced-Techniques.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		37DEA465E6FAE1F4CF4A0268 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB7FC2756C5A3EA835EFE911 /* Pods_iOS_Core_Animation_Advanced_Techniques.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B516C7DD1F2036CA0029501B /* CAGradientLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +177,8 @@
 				B55EAE8C1EF7A05000429ECD /* iOS-Core-Animation-Advanced-TechniquesTests */,
 				B55EAE971EF7A05000429ECD /* iOS-Core-Animation-Advanced-TechniquesUITests */,
 				B55EAE711EF7A05000429ECD /* Products */,
+				120E4A34E98EECF388E4700F /* Pods */,
+				37DEA465E6FAE1F4CF4A0268 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +195,7 @@
 		B55EAE721EF7A05000429ECD /* iOS-Core-Animation-Advanced-Techniques */ = {
 			isa = PBXGroup;
 			children = (
+				B5AB2D201F3964D200C0CBA4 /* lib */,
 				B5A8DC0B1EF8FE480099AC99 /* Images */,
 				B55EAEA91EF7BC4400429ECD /* Class */,
 				B55EAE761EF7A05000429ECD /* AppDelegate.h */,
@@ -208,6 +242,7 @@
 		B55EAEA91EF7BC4400429ECD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B5AB2D281F3966B800C0CBA4 /* JNWSpring */,
 				B591E76C1F283AC20009FF83 /* Category */,
 				B5B01B611F2711E0009E209E /* CABasicAnimation */,
 				B5B01B5D1F26D936009E209E /* 事务 */,
@@ -305,6 +340,34 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		B5AB2D201F3964D200C0CBA4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B5AB2D211F3964D200C0CBA4 /* JNWSpringAnimation */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B5AB2D211F3964D200C0CBA4 /* JNWSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B5AB2D221F3964D200C0CBA4 /* JNWSpringAnimation.h */,
+				B5AB2D231F3964D200C0CBA4 /* JNWSpringAnimation.m */,
+				B5AB2D241F3964D200C0CBA4 /* NSValue+JNWAdditions.h */,
+				B5AB2D251F3964D200C0CBA4 /* NSValue+JNWAdditions.m */,
+			);
+			path = JNWSpringAnimation;
+			sourceTree = "<group>";
+		};
+		B5AB2D281F3966B800C0CBA4 /* JNWSpring */ = {
+			isa = PBXGroup;
+			children = (
+				B5AB2D2B1F3966F500C0CBA4 /* JNWSpringController.h */,
+				B5AB2D2C1F3966F500C0CBA4 /* JNWSpringController.m */,
+			);
+			path = JNWSpring;
+			sourceTree = "<group>";
+		};
 		B5B01B5D1F26D936009E209E /* 事务 */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,9 +393,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B55EAE9D1EF7A05000429ECD /* Build configuration list for PBXNativeTarget "iOS-Core-Animation-Advanced-Techniques" */;
 			buildPhases = (
+				6187B9007BB53B233C3BF13F /* [CP] Check Pods Manifest.lock */,
 				B55EAE6C1EF7A05000429ECD /* Sources */,
 				B55EAE6D1EF7A05000429ECD /* Frameworks */,
 				B55EAE6E1EF7A05000429ECD /* Resources */,
+				1277D15A5F465E436C9F5241 /* [CP] Embed Pods Frameworks */,
+				24DFA6A40D7C957164C19A27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,6 +457,7 @@
 					B55EAE6F1EF7A05000429ECD = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5R5LG6672G;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					B55EAE881EF7A05000429ECD = {
@@ -454,6 +521,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1277D15A5F465E436C9F5241 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Core-Animation-Advanced-Techniques/Pods-iOS-Core-Animation-Advanced-Techniques-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24DFA6A40D7C957164C19A27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Core-Animation-Advanced-Techniques/Pods-iOS-Core-Animation-Advanced-Techniques-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6187B9007BB53B233C3BF13F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B55EAE6C1EF7A05000429ECD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -463,16 +578,19 @@
 				B5A8DC021EF8EED20099AC99 /* ShadowController.m in Sources */,
 				B5A8DC061EF8FA520099AC99 /* AffineController.m in Sources */,
 				B516C7E41F2042010029501B /* CAEmitterLayerController.m in Sources */,
+				B5AB2D271F3964D200C0CBA4 /* NSValue+JNWAdditions.m in Sources */,
 				B55EAE7B1EF7A05000429ECD /* ViewController.m in Sources */,
 				B55EAE781EF7A05000429ECD /* AppDelegate.m in Sources */,
 				B516C7E01F2036E50029501B /* CAGradientLayerController.m in Sources */,
 				B589903D1F0B83BC00CD089A /* CATransformLayerController.m in Sources */,
 				B5B01B641F2711F7009E209E /* CABasicAnimationController.m in Sources */,
+				B5AB2D2D1F3966F500C0CBA4 /* JNWSpringController.m in Sources */,
 				B55EAEAD1EF7BC8A00429ECD /* CoordinateSystemController.m in Sources */,
 				B55EAEB11EF7C81E00429ECD /* HitTestingController.m in Sources */,
 				B55EAE751EF7A05000429ECD /* main.m in Sources */,
 				B5A8DC0A1EF8FDE60099AC99 /* ThreeDController.m in Sources */,
 				B5B01B601F26D959009E209E /* CATransactionController.m in Sources */,
+				B5AB2D261F3964D200C0CBA4 /* JNWSpringAnimation.m in Sources */,
 				B591E77B1F283AC20009FF83 /* UIView+TC.m in Sources */,
 				B58990381F0B2FD400CD089A /* CAShapeLayerController.m in Sources */,
 			);
@@ -623,28 +741,35 @@
 		};
 		B55EAE9E1EF7A05000429ECD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650F18F6FC7FBE90760DC1D8 /* Pods-iOS-Core-Animation-Advanced-Techniques.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5R5LG6672G;
 				INFOPLIST_FILE = "iOS-Core-Animation-Advanced-Techniques/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tcgroup.iOS-Core-Animation-Advanced-Techniques";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B55EAE9F1EF7A05000429ECD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E217D37CAB9EFD01904E79 /* Pods-iOS-Core-Animation-Advanced-Techniques.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5R5LG6672G;
 				INFOPLIST_FILE = "iOS-Core-Animation-Advanced-Techniques/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tcgroup.iOS-Core-Animation-Advanced-Techniques";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

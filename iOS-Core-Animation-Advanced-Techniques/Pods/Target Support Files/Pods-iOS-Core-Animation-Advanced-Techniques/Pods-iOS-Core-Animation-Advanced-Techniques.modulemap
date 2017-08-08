@@ -1,0 +1,6 @@
+framework module Pods_iOS_Core_Animation_Advanced_Techniques {
+  umbrella header "Pods-iOS-Core-Animation-Advanced-Techniques-umbrella.h"
+
+  export *
+  module * { export * }
+}
